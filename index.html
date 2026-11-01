@@ -5,9 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+    <header>
+        <h1>Library</h1>
+        <a href="gallery.html" id="gallery-page">Gallery</a>
+    </header>
+
+    <!--add book-->
+    <section id="index-section">
+        <form id="add-book">
+            <div class="form-row">
+                <label for="title">Title: </label>
+                <input type="text" id="title" name="title">
+            </div>
+
+            <div class="form-row">
+                <label for="author">Author: </label>
+                <input type="text" name="author" id="author">
+            </div>
+
+            <div class="form-row">
+                <label for="imagelink">Image Link: </label>
+                <input type="text" name="imagelink" id="imagelink">
+            </div>
+
+            <input type="submit" value="Submit" id="submitbutton">
+        </form>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
